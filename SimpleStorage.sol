@@ -8,7 +8,7 @@ contract SimpleStorage { // contract is a keyword like class
     
     People public person = People({favoriteNumber:2, name:"daisy"});
 
-    function store(uint256 _favoriteNumber) public{
+    function store(uint256 _favoriteNumber) public virtual{
         favoriteNumber = _favoriteNumber;
     }
 
